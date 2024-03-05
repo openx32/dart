@@ -22,6 +22,14 @@ void stringLength(greetings) {
   print(greetings.length);
 }
 
+dynamic getFirstElement(List<dynamic> list) {
+  //if (list.isNotEmpty) {
+  return list[0];
+  //} else {
+  // return null;
+  // }
+}
+
 void main() {
   addTwo(10, 20);
   subtractTwo(10, 20);
@@ -30,4 +38,10 @@ void main() {
 
   String greetings = "Hello Desmond";
   stringLength(greetings);
+
+  List<int> exampleList = [1, 2, 3, 4, 5];
+  print(getFirstElement(exampleList));
+
+  //List<String> emptyList = [];
+  print(getFirstElement); //(emptyList));
 }
